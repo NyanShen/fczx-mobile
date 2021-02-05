@@ -1,4 +1,4 @@
-import HouseList from './components/houseList';
+import HouseList from './pages/house/houseList';
 import './App.css';
 
 function App() {

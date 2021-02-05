@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import ZoomImage from '../../../components/zoomImage'
 
 import './index.scss'
 const HouseList = () => {
@@ -7,15 +8,16 @@ const HouseList = () => {
             title: '襄阳绿地空间站'
         }
     ])
+
     return (
         <>
             <div className="house-list">
                 {
-                    houseData.map((item) => (
-                        <div className="house-list-li">
+                    houseData.map((item, index) => (
+                        <div className="house-list-li" key={index}>
                             <div className="house-content">
                                 <div className="house-image">
-                                    <image src=""></image>
+                                    <ZoomImage url="https://static.fczx.com/a/202102/05/8/8/b05d555922fcc6fd6cfa322270bbef49.png" />
                                 </div>
                                 <div className="house-text">
                                     <div className="text-item title mb8">
